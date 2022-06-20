@@ -6,16 +6,7 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo managed workflow\n';
 
-const OpenDefaultBrowser = NativeModules.OpenDefaultBrowser
-  ? NativeModules.OpenDefaultBrowser
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
+const { OpenDefaultBrowser } = NativeModules;
 
 export function openBrowser() {
   return OpenDefaultBrowser.openBrowser();
