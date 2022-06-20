@@ -24,7 +24,7 @@ public class OpenDefaultBrowserModule extends ReactContextBaseJavaModule {
 
 
     @ReactMethod
-    public void openApp(String packageId, Promise promise) {
+    public void openBrowser(String packageId, Promise promise) {
         PackageManager packageManager = getReactApplicationContext().getPackageManager();
         try {
             Intent launchIntent = packageManager.getLaunchIntentForPackage(packageId);

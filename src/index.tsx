@@ -17,6 +17,6 @@ const OpenDefaultBrowser = NativeModules.OpenDefaultBrowser
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return OpenDefaultBrowser.multiply(a, b);
+export function openBrowser(packageName: string) {
+  return OpenDefaultBrowser.openBrowser(packageName);
 }
