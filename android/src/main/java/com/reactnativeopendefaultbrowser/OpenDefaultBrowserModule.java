@@ -2,6 +2,9 @@ package com.reactnativeopendefaultbrowser;
 
 import androidx.annotation.NonNull;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
+
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
