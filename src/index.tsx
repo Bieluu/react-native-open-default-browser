@@ -17,6 +17,6 @@ const OpenDefaultBrowser = NativeModules.OpenDefaultBrowser
       }
     );
 
-export function openBrowser(packageName: string) {
-  return OpenDefaultBrowser.openBrowser(packageName);
+export function openBrowser() {
+  return OpenDefaultBrowser.openBrowser();
 }
